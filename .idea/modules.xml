@@ -2,6 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/xixi-shop-backed/xixi-shop-backed.iml" filepath="$PROJECT_DIR$/xixi-shop-backed/xixi-shop-backed.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xixi-shop-common/xixi-shop-common.iml" filepath="$PROJECT_DIR$/xixi-shop-common/xixi-shop-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xixi-shop-entity/xixi-shop-entity.iml" filepath="$PROJECT_DIR$/xixi-shop-entity/xixi-shop-entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xixi-shop-gateway/xixi-shop-gateway.iml" filepath="$PROJECT_DIR$/xixi-shop-gateway/xixi-shop-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xixi-shop-market/xixi-shop-market.iml" filepath="$PROJECT_DIR$/xixi-shop-market/xixi-shop-market.iml" />
       <module fileurl="file://$PROJECT_DIR$/xixishop.iml" filepath="$PROJECT_DIR$/xixishop.iml" />
     </modules>
   </component>

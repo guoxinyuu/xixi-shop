@@ -1,9 +1,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-    <groupId>com.hqyj</groupId>
-    <artifactId>yoyo-shop</artifactId>
+    <groupId>com.gxy</groupId>
+    <artifactId>xixi-shop</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>yoyo-shop</name>
+    <modules>
+        <module>xixi-shop-entity</module>
+        <module>xixi-shop-gateway</module>
+        <module>xixi-shop-backed</module>
+        <module>xixi-shop-common</module>
+        <module>xixi-shop-market</module>
+    </modules>
+    <name>xixi-shop</name>
     <packaging>pom</packaging>
     <!--  FIXME change it to the project's website  -->
     <url>http://www.example.com</url>

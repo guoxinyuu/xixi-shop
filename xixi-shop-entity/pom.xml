@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>xixi-shop</artifactId>
+        <groupId>com.gxy</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>xixi-shop-entity</artifactId>
+
+    <properties>
+        <java.version>1.8</java.version>
+        <!-- 为 spring-boot-maven-plugin 插件指定入口 -->
+        <start-class>com.gxy.entity.App</start-class>
+    </properties>
+
+    <dependencies>
+
+        <!-- jwt -->
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>java-jwt</artifactId>
+            <version>3.18.3</version>
+        </dependency>
+
+    </dependencies>
+    <build>
+        <plugins>
+            <!--
+                spring-boot-maven-plugin 打出的包是不可依赖的
+                这会造成 jianghu_account 等找不到 jianghu_entity
+                于是设置 classifier 属性，意思是打包的时候打两个，例如
+                依赖包：jianghu_account-0.0.1-SNAPSHOT.jar
+                可执行包：jianghu_account-0.0.1-SNAPSHOT-exec.jar
+             -->
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <classifier>exec</classifier>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>

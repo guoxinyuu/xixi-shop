@@ -1,8 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="xixi-shop-backed" />
+        <module name="xixi-shop-entity" />
+        <module name="xixi-shop-common" />
+        <module name="xixi-shop-market" />
+        <module name="xixi-shop-gateway" />
+      </profile>
+    </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="xixi-shop-backed" target="1.8" />
+      <module name="xixi-shop-common" target="1.8" />
+      <module name="xixi-shop-entity" target="1.8" />
+      <module name="xixi-shop-gateway" target="1.8" />
+      <module name="xixi-shop-market" target="1.8" />
       <module name="xixishop" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="xixi-shop-backed" options="-parameters" />
+      <module name="xixi-shop-common" options="-parameters" />
+      <module name="xixi-shop-entity" options="-parameters" />
+      <module name="xixi-shop-gateway" options="-parameters" />
+      <module name="xixi-shop-market" options="-parameters" />
+    </option>
   </component>
 </project>
