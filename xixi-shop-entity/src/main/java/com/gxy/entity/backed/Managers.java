@@ -16,4 +16,5 @@ public class Managers {
     private String password;
     private int age;
     private String sex;
+    private String salt;
 }

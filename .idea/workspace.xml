@@ -20,93 +20,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80a311cd-6391-46f6-b5c7-5b98c08bf8f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_cloud_spring_cloud_alibaba_commons_2021_0_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_cloud_spring_cloud_starter_alibaba_nacos_discovery_2021_0_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_fastjson_1_2_76.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_api_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_client_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_nacos_nacos_common_1_4_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_alibaba_spring_spring_context_support_1_0_11.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_auth0_java_jwt_3_18_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_code_findbugs_jsr305_3_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_errorprone_error_prone_annotations_2_3_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_failureaccess_1_0_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_guava_30_1_jre.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_guava_listenablefuture_9999_0_empty_to_avoid_conflict_with_guava.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_google_j2objc_j2objc_annotations_1_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_jakarta_mail_1_6_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_codec_commons_codec_1_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_io_commons_io_2_7.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_6_1_6_RELEASE.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_dns_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http2_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_classes_macos_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_dns_native_macos_osx_x86_64_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_tcnative_classes_2_0_46_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_classes_epoll_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_73_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_core_1_0_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_netty_reactor_netty_http_1_0_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_0_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_common_0_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_0_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_prometheus_simpleclient_tracer_otel_agent_0_12_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__jakarta_validation_jakarta_validation_api_2_0_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_pool2_2_11_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpasyncclient_4_1_5.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpclient_4_5_13.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_4_4_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_httpcomponents_httpcore_nio_4_4_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_checkerframework_checker_qual_3_5_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_validator_hibernate_validator_6_2_0_Final.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_mail_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_validation_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_6_3.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_gateway_server_3_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_cloud_spring_cloud_starter_gateway_3_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_6_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_3_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_3_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_3_15.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/xixi-shop-backed.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-common/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-common/xixi-shop-common.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/App.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Managers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/xixi-shop-entity.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-gateway/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-gateway/src/main/resources/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-gateway/xixi-shop-gateway.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-market/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-market/xixi-shop-market.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/XixishopBackedApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/ManagersDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/ManagersService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ManagersServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-common/src/main/java/com/gxy/XixishopCommonApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-common/src/main/java/com/gxy/config/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-common/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-common/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/common/vo/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/common/vo/Search.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/HotProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/NewProducts.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/ProductTypes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/ProductTypesCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/ReceiveManage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/service/ModelService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/utils/JwtUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/utils/MdFiveUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-gateway/src/main/java/com/gxy/XixishopGatewayApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/XixiMarketApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/resources/application.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/resources/logback.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/HELP.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/gxy/xixishop/XixishopApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/gxy/xixishop/XixishopApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-backed/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-backed/xixi-shop-backed.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/xixi-shop-backed.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-common/xixi-shop-common.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-common/xixi-shop-common.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Managers.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Managers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/xixi-shop-entity.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/xixi-shop-entity.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-gateway/xixi-shop-gateway.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-gateway/xixi-shop-gateway.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-market/xixi-shop-market.iml" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-market/xixi-shop-market.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,6 +66,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -148,7 +99,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/xixi-shop-market/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -161,11 +112,42 @@
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-market\src\main\resources" />
+      <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-common\src\main\resources" />
+      <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-backed\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gxy.config" />
+      <recent name="com.gxy.entity.common.vo" />
+      <recent name="com.gxy.entity.service" />
+      <recent name="com.gxy.entity.utils" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-gateway\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.MdFiveUtil">
+    <configuration name="MdFiveUtil" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.gxy.entity.utils.MdFiveUtil" />
+      <module name="xixi-shop-entity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.gxy.entity.utils.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XixiMarketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xixi-shop-market" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gxy.XixiMarketApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="XixishopApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="xixishop" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.gxy.xixishop.XixishopApplication" />
@@ -173,6 +155,32 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="XixishopBackedApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xixi-shop-backed" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gxy.XixishopBackedApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XixishopCommonApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xixi-shop-common" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gxy.XixishopCommonApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XixishopGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="xixi-shop-gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.gxy.XixishopGatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MdFiveUtil" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -189,6 +197,7 @@
       <workItem from="1706939558276" duration="5120000" />
       <workItem from="1707028786797" duration="1293000" />
       <workItem from="1707124030367" duration="7581000" />
+      <workItem from="1707196581487" duration="16025000" />
     </task>
     <servers />
   </component>
@@ -216,10 +225,34 @@
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="342" y="137" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.672@0.0.1280.672" timestamp="1706946765635" />
+    <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser" timestamp="1707210137086">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="446" y="42" key="#com.intellij.ide.util.MemberChooser/0.0.1280.672@0.0.1280.672" timestamp="1707210137086" />
     <state x="421" y="91" key="FileChooserDialogImpl" timestamp="1706944125341">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="421" y="91" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1706944125341" />
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom" timestamp="1707237624814">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.bottom/0.0.1280.672@0.0.1280.672" timestamp="1707237624814" />
+    <state width="1237" height="161" key="GridCell.Tab.0.center" timestamp="1707237624814">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.center/0.0.1280.672@0.0.1280.672" timestamp="1707237624814" />
+    <state width="1237" height="161" key="GridCell.Tab.0.left" timestamp="1707237624814">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.left/0.0.1280.672@0.0.1280.672" timestamp="1707237624814" />
+    <state width="1237" height="161" key="GridCell.Tab.0.right" timestamp="1707237624814">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state width="1237" height="161" key="GridCell.Tab.0.right/0.0.1280.672@0.0.1280.672" timestamp="1707237624814" />
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1707208522776">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="171" y="0" key="Maven.ArtifactSearchDialog/0.0.1280.672@0.0.1280.672" timestamp="1707208522776" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1706935350131">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
