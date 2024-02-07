@@ -10,13 +10,18 @@ import com.gxy.entity.common.vo.Result;
 import com.gxy.entity.common.vo.Search;
 import com.gxy.entity.utils.JwtUtils;
 import com.gxy.entity.utils.MdFiveUtil;
+import com.gxy.service.CommonOpenFeign;
 import com.gxy.service.ManagersService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.data.redis.core.RedisTemplate;
 
 import java.util.HashMap;
+import java.util.Map;
+import java.util.UUID;
+import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -31,18 +36,16 @@ public class ManagersServiceImpl extends ServiceImpl<ManagersDao, Managers> impl
     @Autowired
     private ManagersDao managersDao;
 
-    private RedisTemplate<String,Object> redisTemplate;
+    @Autowired
+    CommonOpenFeign commonOpenFeign;
+    //读取锁定次数
+    @Value("${pwdLock}")
+    Integer num;
 
     @Override
     public Result<String> login(Managers managers) {
         String managePhone = managers.getManagePhone();
         String password = managers.getPassword();
-        String keyLock=managePhone+":num";
-        String key=managePhone+":lock";
-        Object obj = redisTemplate.opsForValue().get(key);
-        if(obj!=null){
-            return new Result(500,"账号已被锁定");
-        }
         LambdaQueryWrapper<Managers> queryWrapper = new LambdaQueryWrapper<>();
         queryWrapper.eq(Managers::getManagePhone,managePhone);
         Managers manager = managersDao.selectOne(queryWrapper);
@@ -52,14 +55,42 @@ public class ManagersServiceImpl extends ServiceImpl<ManagersDao, Managers> impl
             String pwd = MdFiveUtil.pwdChange(password, manager.getSalt());
             if(pwd.equals(manager.getPassword())){
                 String token = JwtUtils.createUserToken(manager.getId() + "", manager.getManageName(), manager.getSalt());
-                HashMap<Object, Object> map = new HashMap<>();
-                map.put("token",token);
-                map.put("id",manager.getId());
-                return new Result(200,"登录成功",map);
+                commonOpenFeign.insertModel("manager",manager,0);
+                return new Result(200,"登录成功",token);
+            }else {
+                return new Result<>(500,"密码错误，请重试");
             }
+        }else {
+            return new Result<>(500,"账号不存在，请重试");
         }
+    }
 
-        return null;
+    @Override
+    public Result<String> forgetPassword(Managers managers,String code) {
+        String newPwd = managers.getPassword();
+        String email = managers.getEmail();
+        //查询输入的账号是否存在
+        LambdaQueryWrapper<Managers> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(Managers::getEmail,email);
+        Managers managers1 = managersDao.selectOne(queryWrapper);
+        if(managers1!=null){
+            //获取缓存中的验证码
+            Map emailCode = commonOpenFeign.getModel("emailCode");
+            if(emailCode==null){
+                return new Result<>(500,"验证码不存在或已失效");
+            }else {
+                //验证码相同就进行修改密码
+                if(code.equals(emailCode.get("code"))){
+                    String mdPwd = MdFiveUtil.pwdChange(newPwd, UUID.randomUUID() + "");
+                    managers1.setPassword(mdPwd);
+                    int i = managersDao.updateById(managers1);
+                    if(i>0){
+                        return new Result<>(200,"修改密码成功");
+                    }else return new Result<>(500,"修改密码失败");
+                }else return new Result<>(500,"验证码错误，请重试");
+            }
+        }else
+        return new Result<>(500,"账号不存在，请重新输入");
     }
 
     @Override

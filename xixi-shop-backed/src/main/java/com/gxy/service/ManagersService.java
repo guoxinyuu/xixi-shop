@@ -13,4 +13,5 @@ import com.gxy.entity.service.ModelService;
 
 public interface ManagersService extends ModelService<Managers> {
     Result<String> login(Managers managers);
+    Result<String> forgetPassword(Managers managers,String code);
 }
