@@ -1,4 +1,4 @@
-package com.gxy.entity.market;
+package com.gxy.entity.backed;
 
 import lombok.Data;
 

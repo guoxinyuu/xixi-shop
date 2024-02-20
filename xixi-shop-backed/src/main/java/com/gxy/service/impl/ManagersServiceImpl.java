@@ -1,11 +1,14 @@
 package com.gxy.service.impl;
 
 import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
-import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.LambdaUpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
+import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
+import com.gxy.dao.ManageAndRoleDao;
 import com.gxy.dao.ManagersDao;
 import com.gxy.entity.backed.Managers;
+import com.gxy.entity.backed.RoleManagers;
 import com.gxy.entity.common.vo.Result;
 import com.gxy.entity.common.vo.Search;
 import com.gxy.entity.utils.JwtUtils;
@@ -16,12 +19,11 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
-import org.springframework.data.redis.core.RedisTemplate;
 
-import java.util.HashMap;
+import java.util.Collections;
 import java.util.Map;
+import java.util.Optional;
 import java.util.UUID;
-import java.util.concurrent.TimeUnit;
 
 
 /**
@@ -35,6 +37,9 @@ import java.util.concurrent.TimeUnit;
 public class ManagersServiceImpl extends ServiceImpl<ManagersDao, Managers> implements ManagersService {
     @Autowired
     private ManagersDao managersDao;
+
+    @Autowired
+    private ManageAndRoleDao manageAndRoleDao;
 
     @Autowired
     CommonOpenFeign commonOpenFeign;
@@ -80,7 +85,8 @@ public class ManagersServiceImpl extends ServiceImpl<ManagersDao, Managers> impl
                 return new Result<>(500,"验证码不存在或已失效");
             }else {
                 //验证码相同就进行修改密码
-                if(code.equals(emailCode.get("code"))){
+                String cacheCode = (String) emailCode.get("code");
+                if(code.equals(cacheCode)){
                     String mdPwd = MdFiveUtil.pwdChange(newPwd, UUID.randomUUID() + "");
                     managers1.setPassword(mdPwd);
                     int i = managersDao.updateById(managers1);
@@ -93,19 +99,55 @@ public class ManagersServiceImpl extends ServiceImpl<ManagersDao, Managers> impl
         return new Result<>(500,"账号不存在，请重新输入");
     }
 
+//    @Override
+//    public Result<String> deleteManage(Managers managers) {
+//        int i = managersDao.deleteById(managers.getId());
+//        int i1 = manageAndRoleDao.deleteById(managers.getRole().getId());
+//        if(i>0&&i1>0) return new Result<>(200,"删除成功");
+//        else return new Result<>(500,"删除失败");
+//    }
+
     @Override
     public Result<Managers> insertModel(Managers model) {
-        return null;
+        String salt=UUID.randomUUID() + "";
+        String pwd = MdFiveUtil.pwdChange(model.getPassword(),salt );
+        model.setPassword(pwd);
+        model.setSalt(salt);
+        int i = managersDao.insert(model);
+        Managers manager = managersDao.getManagerByName(model.getManageName());
+        //向中间表添加数据
+        RoleManagers mar = new RoleManagers();
+        mar.setManagerId(manager.getId());
+        mar.setRoleId(model.getRole().getId());
+        int i1 = manageAndRoleDao.insert(mar);
+        if(i>0&&i1>0) return new Result<>(200,"添加成功");
+        else return new Result<>(500,"添加失败");
     }
 
     @Override
     public Result<Managers> updateModel(Managers model) {
-        return null;
+        int i = managersDao.updateById(model);
+//        RoleManagers roleManagers = new RoleManagers();
+//        roleManagers.setRoleId(model.getRole().getId());
+//        Managers one = manageAndRoleDao.selectOne(model.getId());
+//        roleManagers.setId(one.getId());
+//        roleManagers.setManagerId(model.getId());
+        //不是通过主键id修改，使用wrapper
+        LambdaUpdateWrapper<RoleManagers> updateWrapper = new LambdaUpdateWrapper<>();
+        updateWrapper.eq(RoleManagers::getManagerId,model.getId());//类似where manager_id=#{id}
+        updateWrapper.set(RoleManagers::getRoleId,model.getRole().getId());
+        int i1 = manageAndRoleDao.update(null,updateWrapper);
+        return i>0&&i1>0? new Result<>(200,"修改成功"):new Result<>(500,"修改失败");
     }
 
     @Override
     public Result<Object> deleteModelById(int id) {
-        return null;
+//        Managers manager = managersDao.selectById(id);
+        int i1 = managersDao.deleteById(id);
+        Managers mar = manageAndRoleDao.selectOne(id);
+        int i = manageAndRoleDao.deleteById(mar.getId());
+        if(i>0&&i1>0) return new Result<>(200,"删除成功");
+        else return new Result<>(500,"删除失败");
     }
 
     @Override
@@ -113,8 +155,11 @@ public class ManagersServiceImpl extends ServiceImpl<ManagersDao, Managers> impl
         return null;
     }
 
+    //分页
     @Override
     public PageInfo<Managers> getModelsBySearch(Search search) {
-        return null;
+        search.initSearch();
+        PageHelper.startPage(search.getCurrentPage(),search.getPageSize());
+        return new PageInfo(Optional.ofNullable(managersDao.getManagersBySearch(search)).orElse(Collections.emptyList()));
     }
 }

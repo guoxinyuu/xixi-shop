@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.Map;
 
 /**
  * @Title: SendEmailServiceImpl
@@ -40,7 +41,9 @@ public class SendEmailServiceImpl implements SendEmailService {
         HashMap<String, Object> map = emailUtil.sendSimpleMail(e, "此次验证码为：" + code, content);
         if(map.get("status").equals("success")){
             //发送成功就将验证码放到缓存中，设置过期时间为5分钟
-            redisService.insertModel("emailCode",code,5);
+            Map<String, String> map1 = new HashMap<>();
+            map1.put("code", code);
+            redisService.insertModel("emailCode",map1,5);
             return new Result<>(200,"验证码发送成功");
         }else return new Result<>(500,"验证码发送失败");
     }

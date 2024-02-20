@@ -1,5 +1,8 @@
 package com.gxy.entity.backed;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 /**
@@ -10,6 +13,7 @@ import lombok.Data;
  */
 @Data
 public class Managers {
+    @TableId(value = "id", type = IdType.AUTO)
     private int id;
     private String manageName;
     private String managePhone;
@@ -18,6 +22,17 @@ public class Managers {
     private String sex;
     private String salt;
     private String email;
+    @TableField(exist = false)
+    private Role role;
+    public Role getRole() {
+        return role;
+    }
+
+    public void setRole(Role role) {
+        this.role = role;
+    }
+
+
 
     public int getId() {
         return id;
