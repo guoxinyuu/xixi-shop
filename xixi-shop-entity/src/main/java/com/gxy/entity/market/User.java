@@ -1,5 +1,7 @@
-package com.gxy.entity.backed;
+package com.gxy.entity.market;
 
+import com.baomidou.mybatisplus.annotation.IdType;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 /**
@@ -10,6 +12,7 @@ import lombok.Data;
  */
 @Data
 public class User {
+    @TableId(value = "id",type = IdType.AUTO)
     private int id;
     private String userName;
     private String password;
@@ -19,4 +22,5 @@ public class User {
     private String phone;
     private String headImg;
     private String userSalt;
+    private String email;
 }

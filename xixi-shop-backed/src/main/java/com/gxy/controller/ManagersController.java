@@ -5,6 +5,7 @@ import com.gxy.entity.backed.Managers;
 import com.gxy.entity.common.vo.Result;
 import com.gxy.entity.common.vo.Search;
 import com.gxy.service.ManagersService;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.*;
@@ -26,8 +27,8 @@ public class ManagersController {
         return managersService.login(managers);
     }
 
-    @PostMapping(value = "/findPassword", consumes = MediaType.APPLICATION_JSON_VALUE)
-    public Result findPassword(@RequestBody Managers managers,String code){
+    @PostMapping(value = "/findPassword/{code}", consumes = MediaType.APPLICATION_JSON_VALUE)
+    public Result findPassword(@RequestBody Managers managers,@PathVariable("code") String code){
         return managersService.forgetPassword(managers,code);
     }
 

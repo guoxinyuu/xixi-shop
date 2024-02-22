@@ -24,6 +24,7 @@ public class Managers {
     private String email;
     @TableField(exist = false)
     private Role role;
+
     public Role getRole() {
         return role;
     }

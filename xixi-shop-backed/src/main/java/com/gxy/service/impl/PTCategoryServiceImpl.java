@@ -61,24 +61,25 @@ public class PTCategoryServiceImpl extends ServiceImpl<PTCategoryDao, ProductTyp
 
     @Override
     public Result<ProductTypesCategoryDto> updateModel(ProductTypesCategoryDto model) {
+        int i = ptCategoryDao.updateById(model);
 //        ProductTypesCategory ptc = new ProductTypesCategory();
 //        BeanUtils.copyProperties(model,ptc);
         //BeanUtils.copyProperties(model,ptc) ->  ptc.set??(model.get??)
-        if(model.getProductTypeCategory()!=null&&model.getCategoryImg()!=null) {
-            int i = ptCategoryDao.updateById(model);
-            LambdaUpdateWrapper<PtPtc> wrapper = new LambdaUpdateWrapper<>();
-            wrapper.eq(PtPtc::getPtcId,model.getId());
-            wrapper.set(PtPtc::getPtId,model.getProductTypes().getId());
-            int i1 = typeAndCategoryDao.update(null, wrapper);
-            return i>0&& i1>0?new Result<>(200,"修改成功"):new Result<>(500,"修改失败");
-
-        }
+//        if(model.getProductTypeCategory()!=null&&model.getCategoryImg()!=null) {
+//            int i = ptCategoryDao.updateById(model);
+//            LambdaUpdateWrapper<PtPtc> wrapper = new LambdaUpdateWrapper<>();
+//            wrapper.eq(PtPtc::getPtcId,model.getId());
+//            wrapper.set(PtPtc::getPtId,model.getProductTypes().getId());
+//            int i1 = typeAndCategoryDao.update(null, wrapper);
+//            return i>0&& i1>0?new Result<>(200,"修改成功"):new Result<>(500,"修改失败");
+//
+//        }
         //1.
         LambdaUpdateWrapper<PtPtc> wrapper = new LambdaUpdateWrapper<>();
         wrapper.eq(PtPtc::getPtcId,model.getId());
         wrapper.set(PtPtc::getPtId,model.getProductTypes().getId());
         int i1 = typeAndCategoryDao.update(null, wrapper);
-        return i1>0?new Result<>(200,"修改成功"):new Result<>(500,"修改失败");
+        return i1>0&&i>0?new Result<>(200,"修改成功"):new Result<>(500,"修改失败");
 
     }
 

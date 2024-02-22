@@ -1,6 +1,8 @@
 package com.gxy.entity.backed;
 
+import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableField;
+import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 /**
@@ -11,6 +13,7 @@ import lombok.Data;
  */
 @Data
 public class ProductTypesCategory {
+    @TableId(value = "id",type = IdType.AUTO)
     private int id;
     private String productTypeCategory;
     private String categoryImg;

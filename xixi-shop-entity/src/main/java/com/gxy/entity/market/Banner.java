@@ -5,16 +5,14 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 
 /**
- * @Title: NewProducts
+ * @Title: Banner
  * @Author GUOXINYV
- * @Date 2024/2/6 15:58
+ * @Date 2024/2/22 22:52
  * @description:
  */
 @Data
-public class NewProducts {
+public class Banner {
     @TableId(value = "id",type = IdType.AUTO)
     private int id;
-    private String newProductName;
-    private String newProductImg;
-    private float newProductPrice;
+    private String bannerImg;
 }

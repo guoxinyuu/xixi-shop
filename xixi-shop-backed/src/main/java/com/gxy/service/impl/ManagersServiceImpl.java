@@ -87,7 +87,7 @@ public class ManagersServiceImpl extends ServiceImpl<ManagersDao, Managers> impl
                 //验证码相同就进行修改密码
                 String cacheCode = (String) emailCode.get("code");
                 if(code.equals(cacheCode)){
-                    String mdPwd = MdFiveUtil.pwdChange(newPwd, UUID.randomUUID() + "");
+                    String mdPwd = MdFiveUtil.pwdChange(newPwd, managers1.getSalt());
                     managers1.setPassword(mdPwd);
                     int i = managersDao.updateById(managers1);
                     if(i>0){

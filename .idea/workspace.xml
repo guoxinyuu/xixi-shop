@@ -20,32 +20,49 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="80a311cd-6391-46f6-b5c7-5b98c08bf8f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/controller/PTCategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/controller/ProductTypesController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/ManageAndRoleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/PTCategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/ProductPtcDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/ProductTypesDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/TypeAndCategoryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/PTCategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/ProductTypesService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/PTCategoryServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ProductTypesServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/ProductPtc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/PtPtc.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/RoleManagers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/dto/ProductTypesCategoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/Banner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/OrderUser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/controller/BannerController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/controller/HotProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/controller/NewProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/dao/BannerDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/dao/HotProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/dao/NewProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/BannerService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/CommonOpenFeign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/HotProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/NewProductsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/impl/BannerServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/impl/HotProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/impl/NewProductServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/impl/OrderServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/xixi-shop-market/src/main/java/com/gxy/service/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/controller/ManagersController.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/controller/ManagersController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/ManagersDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/ManagersDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/ManagersService.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/ManagersService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/PTCategoryDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/dao/PTCategoryDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ManagersServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ManagersServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xixi-shop-common/src/main/java/com/gxy/service/impl/SendEmailServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-common/src/main/java/com/gxy/service/impl/SendEmailServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/PTCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/PTCategoryServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Managers.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Managers.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/common/Email.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/common/Email.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Product.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/ProductTypes.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/ProductTypes.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/ProductTypesCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/ProductTypesCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/ProductPtc.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/ProductPtc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/ProductTypesCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/ProductTypesCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/PtPtc.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/PtPtc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/Role.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/RoleManagers.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/RoleManagers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/backed/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/HotProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/HotProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/NewProducts.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/NewProducts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/xixi-shop-entity/src/main/java/com/gxy/entity/market/Order.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,20 +130,20 @@
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-gateway\src\main\resources" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.gxy.entity.utils" />
-      <recent name="com.gxy.filter" />
-      <recent name="com.gxy.config" />
-      <recent name="com.gxy.service" />
-      <recent name="com.gxy.entity.common.vo" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-market\src\main\resources" />
       <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-common\src\main\resources" />
       <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-backed\src\main\resources" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.gxy.service" />
+      <recent name="com.gxy.entity.utils" />
+      <recent name="com.gxy.filter" />
+      <recent name="com.gxy.config" />
+      <recent name="com.gxy.entity.common.vo" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\springCloud-xixishop\xixi-shop\xixi-shop-gateway\src\main\resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -217,6 +234,9 @@
       <workItem from="1708358834857" duration="1646000" />
       <workItem from="1708392542957" duration="12539000" />
       <workItem from="1708437188400" duration="6123000" />
+      <workItem from="1708500689872" duration="11546000" />
+      <workItem from="1708563677723" duration="16893000" />
+      <workItem from="1708613274892" duration="4015000" />
     </task>
     <servers />
   </component>
@@ -244,10 +264,10 @@
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="342" y="137" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.672@0.0.1280.672" timestamp="1706946765635" />
-    <state x="446" y="40" key="#com.intellij.ide.util.MemberChooser" timestamp="1708438851173">
+    <state x="446" y="40" key="#com.intellij.ide.util.MemberChooser" timestamp="1708614908973">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state x="446" y="40" key="#com.intellij.ide.util.MemberChooser/0.0.1280.672@0.0.1280.672" timestamp="1708438851173" />
+    <state x="446" y="40" key="#com.intellij.ide.util.MemberChooser/0.0.1280.672@0.0.1280.672" timestamp="1708614908973" />
     <state width="420" height="466" key="DebuggerActiveHint" timestamp="1708440961986">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
@@ -256,54 +276,54 @@
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="421" y="91" key="FileChooserDialogImpl/0.0.1280.672@0.0.1280.672" timestamp="1708228296557" />
-    <state width="1237" height="248" key="GridCell.Tab.0.bottom" timestamp="1708443358814">
+    <state width="1237" height="248" key="GridCell.Tab.0.bottom" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="1237" height="248" key="GridCell.Tab.0.bottom/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="1237" height="248" key="GridCell.Tab.0.center" timestamp="1708443358814">
+    <state width="1237" height="248" key="GridCell.Tab.0.bottom/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="1237" height="248" key="GridCell.Tab.0.center" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="1237" height="248" key="GridCell.Tab.0.center/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="1237" height="248" key="GridCell.Tab.0.left" timestamp="1708443358814">
+    <state width="1237" height="248" key="GridCell.Tab.0.center/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="1237" height="248" key="GridCell.Tab.0.left" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="1237" height="248" key="GridCell.Tab.0.left/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="1237" height="248" key="GridCell.Tab.0.right" timestamp="1708443358814">
+    <state width="1237" height="248" key="GridCell.Tab.0.left/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="1237" height="248" key="GridCell.Tab.0.right" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="1237" height="248" key="GridCell.Tab.0.right/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="964" height="206" key="GridCell.Tab.1.bottom" timestamp="1708443358814">
+    <state width="1237" height="248" key="GridCell.Tab.0.right/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="964" height="328" key="GridCell.Tab.1.bottom" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="206" key="GridCell.Tab.1.bottom/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="964" height="206" key="GridCell.Tab.1.center" timestamp="1708443358814">
+    <state width="964" height="328" key="GridCell.Tab.1.bottom/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="964" height="328" key="GridCell.Tab.1.center" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="206" key="GridCell.Tab.1.center/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="964" height="206" key="GridCell.Tab.1.left" timestamp="1708443358814">
+    <state width="964" height="328" key="GridCell.Tab.1.center/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="964" height="328" key="GridCell.Tab.1.left" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="206" key="GridCell.Tab.1.left/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="964" height="206" key="GridCell.Tab.1.right" timestamp="1708443358814">
+    <state width="964" height="328" key="GridCell.Tab.1.left/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="964" height="328" key="GridCell.Tab.1.right" timestamp="1708518719020">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="206" key="GridCell.Tab.1.right/0.0.1280.672@0.0.1280.672" timestamp="1708443358814" />
-    <state width="964" height="235" key="GridCell.Tab.2.bottom" timestamp="1708441587834">
+    <state width="964" height="328" key="GridCell.Tab.1.right/0.0.1280.672@0.0.1280.672" timestamp="1708518719020" />
+    <state width="964" height="230" key="GridCell.Tab.2.bottom" timestamp="1708505720514">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="235" key="GridCell.Tab.2.bottom/0.0.1280.672@0.0.1280.672" timestamp="1708441587834" />
-    <state width="964" height="235" key="GridCell.Tab.2.center" timestamp="1708441587834">
+    <state width="964" height="230" key="GridCell.Tab.2.bottom/0.0.1280.672@0.0.1280.672" timestamp="1708505720514" />
+    <state width="964" height="230" key="GridCell.Tab.2.center" timestamp="1708505720514">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="235" key="GridCell.Tab.2.center/0.0.1280.672@0.0.1280.672" timestamp="1708441587834" />
-    <state width="964" height="235" key="GridCell.Tab.2.left" timestamp="1708441587834">
+    <state width="964" height="230" key="GridCell.Tab.2.center/0.0.1280.672@0.0.1280.672" timestamp="1708505720514" />
+    <state width="964" height="230" key="GridCell.Tab.2.left" timestamp="1708505720514">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="235" key="GridCell.Tab.2.left/0.0.1280.672@0.0.1280.672" timestamp="1708441587834" />
-    <state width="964" height="235" key="GridCell.Tab.2.right" timestamp="1708441587834">
+    <state width="964" height="230" key="GridCell.Tab.2.left/0.0.1280.672@0.0.1280.672" timestamp="1708505720514" />
+    <state width="964" height="230" key="GridCell.Tab.2.right" timestamp="1708505720514">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state width="964" height="235" key="GridCell.Tab.2.right/0.0.1280.672@0.0.1280.672" timestamp="1708441587834" />
+    <state width="964" height="230" key="GridCell.Tab.2.right/0.0.1280.672@0.0.1280.672" timestamp="1708505720514" />
     <state x="171" y="0" key="Maven.ArtifactSearchDialog" timestamp="1707208522776">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
@@ -312,6 +332,10 @@
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.672@0.0.1280.672" timestamp="1708256285867" />
+    <state x="0" y="0" width="605" height="672" key="find.popup" timestamp="1708569280170">
+      <screen x="0" y="0" width="1280" height="672" />
+    </state>
+    <state x="0" y="0" width="605" height="672" key="find.popup/0.0.1280.672@0.0.1280.672" timestamp="1708569280170" />
     <state x="28" y="0" key="new project wizard" timestamp="1707137314673">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
@@ -320,23 +344,28 @@
       <screen x="0" y="0" width="1280" height="672" />
     </state>
     <state x="297" y="149" key="run.anything.popup/0.0.1280.672@0.0.1280.672" timestamp="1707295689335" />
-    <state x="303" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1708342906409">
+    <state x="303" y="-1" width="672" height="678" key="search.everywhere.popup" timestamp="1708514510858">
       <screen x="0" y="0" width="1280" height="672" />
     </state>
-    <state x="303" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.672@0.0.1280.672" timestamp="1708342906409" />
+    <state x="303" y="-1" width="672" height="678" key="search.everywhere.popup/0.0.1280.672@0.0.1280.672" timestamp="1708514510858" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ManagersServiceImpl.java</url>
-          <line>79</line>
-          <option name="timeStamp" value="2" />
+          <url>file://$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/PTCategoryServiceImpl.java</url>
+          <line>68</line>
+          <option name="timeStamp" value="3" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/PTCategoryServiceImpl.java</url>
-          <line>67</line>
-          <option name="timeStamp" value="3" />
+          <url>file://$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ManagersServiceImpl.java</url>
+          <line>87</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/xixi-shop-backed/src/main/java/com/gxy/service/impl/ManagersServiceImpl.java</url>
+          <line>57</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
